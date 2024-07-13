@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCI-DSS Compliance Framework</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .secure-network {
+            background-color: #ffe6e6;
+        }
+        .cardholder-data {
+            background-color: #e6f7ff;
+        }
+        .vulnerability-management {
+            background-color: #e6ffe6;
+        }
+        .access-control {
+            background-color: #fff5e6;
+        }
+        .monitoring-testing {
+            background-color: #ffe6f7;
+        }
+        .information-security {
+            background-color: #e6e6ff;
+        }
+        .environmental-hazards {
+            background-color: #f9e6e6;
+        }
+        .secure-application {
+            background-color: #e6e6f7;
+        }
+        .vendor-management {
+            background-color: #f5e6e6;
+        }
+        .sticky-header {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>PCI-DSS Compliance Framework</h1>
+    <p>The PCI-DSS (Payment Card Industry Data Security Standard) framework is a set of security standards designed to ensure that all companies that accept, process, store, or transmit credit card information maintain a secure environment. The framework is crucial for protecting cardholder data and preventing data breaches and fraud. PCI-DSS compliance helps organizations build and maintain a secure network, protect cardholder data, implement strong access control measures, and regularly monitor and test networks. By adhering to PCI-DSS requirements, organizations can secure their systems, reduce vulnerabilities, and build trust with customers and partners. The framework includes various control categories and specific controls, each with detailed implementation steps to guide organizations in achieving and maintaining compliance.</p>
+    <table>
+        <thead>
+            <tr class="sticky-header">
+                <th>Control Category</th>
+                <th>Control</th>
+                <th>Description</th>
+                <th>Implementation Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="secure-network">
+                <td>Build and Maintain a Secure Network and Systems</td>
+                <td>Firewall Configuration</td>
+                <td>Install and maintain a firewall configuration to protect cardholder data.</td>
+                <td>Develop and implement firewall policies to control traffic between trusted and untrusted networks.</td>
+            </tr>
+            <tr class="secure-network">
+                <td></td>
+                <td>Secure Network Configuration</td>
+                <td>Maintain secure configurations for network devices and systems.</td>
+                <td>Regularly review and update network configurations to ensure security.</td>
+            </tr>
+            <tr class="cardholder-data">
+                <td>Protect Cardholder Data</td>
+                <td>Data Encryption</td>
+                <td>Protect stored cardholder data with strong encryption.</td>
+                <td>Use industry-accepted encryption algorithms to encrypt cardholder data at rest and in transit.</td>
+            </tr>
+            <tr class="cardholder-data">
+                <td></td>
+                <td>Masking and Truncation</td>
+                <td>Mask PAN (Primary Account Number) when displayed, and truncate PAN when stored.</td>
+                <td>Implement masking and truncation techniques to reduce exposure of cardholder data.</td>
+            </tr>
+            <tr class="vulnerability-management">
+                <td>Maintain a Vulnerability Management Program</td>
+                <td>Anti-Virus and Anti-Malware</td>
+                <td>Deploy and maintain anti-virus and anti-malware solutions on all systems.</td>
+                <td>Ensure anti-virus solutions are updated regularly and perform periodic scans for malware.</td>
+            </tr>
+            <tr class="vulnerability-management">
+                <td></td>
+                <td>Vulnerability Management</td>
+                <td>Implement a vulnerability management program to identify and address security vulnerabilities.</td>
+                <td>Use vulnerability scanning tools to regularly assess systems and apply patches for identified vulnerabilities.</td>
+            </tr>
+            <tr class="access-control">
+                <td>Implement Strong Access Control Measures</td>
+                <td>Access Control Policy</td>
+                <td>Restrict access to cardholder data based on business need-to-know.</td>
+                <td>Develop and enforce an access control policy that defines access permissions and procedures for granting and revoking access.</td>
+            </tr>
+            <tr class="access-control">
+                <td></td>
+                <td>Multi-Factor Authentication (MFA)</td>
+                <td>Implement MFA for accessing systems that store, process, or transmit cardholder data.</td>
+                <td>Use MFA solutions (e.g., OTP, biometrics, smart cards) for critical systems and applications.</td>
+            </tr>
+            <tr class="monitoring-testing">
+                <td>Regularly Monitor and Test Networks</td>
+                <td>Network Monitoring and Logging</td>
+                <td>Track and monitor all access to network resources and cardholder data.</td>
+                <td>Implement logging and monitoring solutions to capture and review access logs for suspicious activities.</td>
+            </tr>
+            <tr class="monitoring-testing">
+                <td></td>
+                <td>Penetration Testing</td>
+                <td>Conduct regular penetration tests to identify and exploit vulnerabilities.</td>
+                <td>Perform both internal and external penetration tests to assess the security of network and application environments.</td>
+            </tr>
+            <tr class="information-security">
+                <td>Maintain an Information Security Policy</td>
+                <td>Security Policy</td>
+                <td>Develop and maintain a security policy that addresses information security for all personnel.</td>
+                <td>Create, approve, and disseminate a security policy that defines roles, responsibilities, and procedures for managing information security.</td>
+            </tr>
+            <tr class="information-security">
+                <td></td>
+                <td>Security Awareness Training</td>
+                <td>Provide security awareness training for all employees.</td>
+                <td>Develop and deliver training programs on security policies, procedures, and best practices.</td>
+            </tr>
+            <tr class="environmental-hazards">
+                <td>Protect Against Environmental Hazards</td>
+                <td>Physical Security Controls</td>
+                <td>Implement controls to secure physical access to cardholder data systems.</td>
+                <td>Use physical security measures such as access cards, biometric scanners, and surveillance cameras.</td>
+            </tr>
+            <tr class="environmental-hazards">
+                <td></td>
+                <td>Environmental Controls</td>
+                <td>Protect systems and data from environmental hazards.</td>
+                <td>Implement measures to safeguard systems and data from fire, flooding, and other environmental threats.</td>
+            </tr>
+            <tr class="secure-application">
+                <td>Secure Application Development</td>
+                <td>Secure Coding Practices</td>
+                <td>Ensure secure coding practices for in-house developed and custom applications.</td>
+                <td>Follow secure coding guidelines and perform code reviews to identify and remediate security vulnerabilities.</td>
+            </tr>
+            <tr class="secure-application">
+                <td></td>
+                <td>Application Security Testing</td>
+                <td>Conduct security testing of applications before deployment.</td>
+                <td>Use static and dynamic analysis tools to test applications for security vulnerabilities.</td>
+            </tr>
+            <tr class="vendor-management">
+                <td>Vendor and Third-Party Management</td>
+                <td>Third-Party Risk Management</td>
+                <td>Assess and manage risks associated with third-party service providers.</td>
+                <td>Conduct due diligence, risk assessments, and continuous monitoring of third-party vendors.</td>
+            </tr>
+            <tr class="vendor-management">
+                <td></td>
+                <td>Third-Party Security Requirements</td>
+                <td>Define and enforce security requirements for third parties.</td>
+                <td>Include security clauses in contracts and perform regular audits of third-party compliance.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
